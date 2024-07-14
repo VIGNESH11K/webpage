@@ -41,6 +41,19 @@ nav ul li a {
     font-weight: bold;
 }
 
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
 .content-container {
     width: 80%;
     margin: 20px auto;
@@ -118,5 +131,26 @@ h1 {
     .left-description,
     .right-description {
         text-align: left;
+    }
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        background-color: #003366;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        display: none;
+        padding: 0;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    nav ul.open {
+        display: flex;
     }
 }
