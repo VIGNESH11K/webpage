@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #003366;
+}
+
+.faculty {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.media-content {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-video {
+    order: 1;
+    border-radius: 10px 0 0 10px;
+}
+
+.right-video {
+    order: 2;
+    border-radius: 0 10px 10px 0;
+}
+
+.left-description {
+    order: 2;
+    margin-left: 20px;
+    text-align: right;
+    border-radius: 0 10px 10px 0;
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+
+.right-description {
+    order: 1;
+    margin-right: 20px;
+    border-radius: 10px 0 0 10px;
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+
+.lab-video {
+    width: 40%;
+    height: auto;
+}
+
+.description {
+    flex: 1;
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .media-content {
+        flex-direction: column;
+    }
+    .lab-video,
+    .description {
+        width: 100%;
+        margin: 0 0 20px 0;
+        border-radius: 10px;
+    }
+    .left-description,
+    .right-description {
+        text-align: left;
+    }
+}
